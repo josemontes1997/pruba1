@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="fondo.css">
+	<meta charset="utf-8"> <!--Idioma Español-->
+	<link rel="icon" type="icon/png" href="https://cdn.iconscout.com/icon/premium/png-256-thumb/pet-care-4-1079790.png">
+	
+	<title>MAS+COTAS</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<!--termina encabezado-->
+
+
+<body>
+	<header>
+		<div align="center">
+			<img src="img/banner.png">
+			</div>
+		</header>
+
+		<!--empiza nav-->
+		<nav>
+			<div align="center">
+		<a href="index.html"><img src="img/inicio.png"></a>
+		<a href="conocenos.html"><img src="img/conocenos.png"></a>
+		<a href="perros.html"><img src="img/perros.png"></a>
+		<a href="gatos.html"><img src="img/gatos.png"></a>
+		</div>
+
+		<div align="center">
+		<a href="conejos.html"><img src="img/conejos.png"></a>
+		<a href="contactanos.html"><img src="img/contactanos.png"></a>
+		</div>
+	</nav>
+
+		<!--termina nav-->
+
+		<!--EMPIEZA FORMULARIO-->
+
+		 <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>INFORMACION<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span> inf.cont@gmail.com</p>
+                <p><span class="fa fa-mobile"></span> +52(938) 800-1212</p>
+            </section>
+        </section>
+
+        <form action="enviar.php" method="post" class="form_contact">
+            <h2>Envia un mensaje</h2>
+            <div class="user_info">
+                <label for="names">Nombres *</label>
+                <input type="text" id="names" name="nombre" required>
+
+                <label for="phone">Telefono / Celular</label>
+                <input type="text" id="phone" name="telefono">
+
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="email" name="correo" required>
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+
+                <input type="submit" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+
+    </section>
+
+</body>
+</html>
